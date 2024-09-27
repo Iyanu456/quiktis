@@ -34,8 +34,8 @@ export default function Home() {
 			</header>
 
 			<main className="">
-				<section className="background px-[3em] py-[3em] ">
-					<div className="flex gap-2 ">
+				<section className="background px-[1.5em] md:px-[3em] py-[3em] ">
+					<div className="grid place-items-center md:flex gap-2 ">
 						<Image
 							src="/IMG_0832 3.png"
 							className="my-auto min-w-[100px]"
@@ -44,23 +44,23 @@ export default function Home() {
 							width={24}
 						/>
 
-						<h1 className="text-white text-[2.8em] font-bold max-w-[65vw] md:leading-[1.4em]">
+						<h1 className="max-sm:text-center text-white text-[2.8em] font-bold max-w-[65vw] md:leading-[1.4em]">
 							From Concept to Curtain Call Quiktis Has You Covered
 						</h1>
 					</div>
-					<div className="ml-[7em] mt-5 items-center flex">
-						<p className="text-white max-w-[15em] md:leading-[1.4em]">
+					<div className="max-sm:items-center gap-3 md:ml-[7em] mt-5 items-center flex max-sm:flex-col">
+						<p className="max-sm:text-center text-white max-w-[15em] md:leading-[1.4em]">
 							Stay Ahead of the Curve with Quiktis' Cutting-Edge
 							Solutions
 						</p>
-						<button className="px-[2em] py-3 rounded-md bg-[#F68B61] text-white gap-3">
+						<button className="max-sm:mt-3 px-[2em] py-3 rounded-md bg-[#F68B61] text-white gap-3">
 							Explore Events
 						</button>
 					</div>
 				</section>
 
 
-        <section className="px-[3em] mt-[3em] grid grid-cols-[1fr,1.55fr] gap-[3em]">
+        <section className="px-[1.5em] md:px-[3em] mt-[3em] flex flex-col md:grid grid-cols-[1fr,1.55fr] gap-3 md:gap-[3em]">
         <Image
 							src="/image2.png"
 							className="my-auto w-[100%]"
@@ -70,11 +70,11 @@ export default function Home() {
 						/>
 
 <div className="my-auto">
-						<h2 className="font-bold text-[2em] max-w-[15em] md:leading-[1.4em]">
+						<h2 className="font-bold text-[2em] md:max-w-[15em] md:leading-[1.4em]">
             Where Event Experiences 
 Are Revolutionized!
 						</h2>
-            <p className="pt-3 text-[#666666]">At Quiktis, we're on a mission to transform the way events are managed and experienced. With our cutting-edge ticketing platform, we're dedicated to simplifying the intricate world of event management, making it easier and more enjoyable for both organizers and attendees alike.</p>
+            <p className="py-3 text-[#666666]">At Quiktis, we're on a mission to transform the way events are managed and experienced. With our cutting-edge ticketing platform, we're dedicated to simplifying the intricate world of event management, making it easier and more enjoyable for both organizers and attendees alike.</p>
 						
 					</div>
         </section>
