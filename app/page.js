@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
 	return (
 		<>
-			<header className="flex justify-between py-4 px-[3em] bg-[#F68B61]">
+			<header className="flex justify-between py-4 px-[1.5em] md:px-[3em] bg-[#F68B61]">
 				<Image
 					src="/logo.svg"
 					className="my-auto min-w-[100px]"
