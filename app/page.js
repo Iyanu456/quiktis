@@ -58,6 +58,26 @@ export default function Home() {
 						</button>
 					</div>
 				</section>
+
+
+        <section className="px-[3em] mt-[3em] grid grid-cols-[1fr,1.55fr] gap-[3em]">
+        <Image
+							src="/image2.png"
+							className="my-auto w-[100%]"
+							alt={"logo"}
+							height={24}
+							width={24}
+						/>
+
+<div className="my-auto">
+						<h2 className="font-bold text-[2em] max-w-[15em] md:leading-[1.4em]">
+            Where Event Experiences 
+Are Revolutionized!
+						</h2>
+            <p className="pt-3 text-[#666666]">At Quiktis, we're on a mission to transform the way events are managed and experienced. With our cutting-edge ticketing platform, we're dedicated to simplifying the intricate world of event management, making it easier and more enjoyable for both organizers and attendees alike.</p>
+						
+					</div>
+        </section>
 			</main>
 		</>
 	);
