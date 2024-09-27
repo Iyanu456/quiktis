@@ -14,3 +14,9 @@ body {
     text-wrap: balance;
   }
 }
+
+.background {
+  background-image: url("../public/image.png");
+  object-fit: cover;
+  object-position: center;
+}
