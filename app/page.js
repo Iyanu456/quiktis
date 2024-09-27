@@ -49,9 +49,9 @@ export default function Home() {
 						</h1>
 					</div>
 					<div className="max-sm:items-center gap-3 md:ml-[7em] mt-5 items-center flex max-sm:flex-col">
-						<p className="max-sm:text-center text-white max-w-[15em] md:leading-[1.4em]">
+						<p className="max-sm:text-center text-white max-w-[15em] md:leading-[1.4em]">{`
 							Stay Ahead of the Curve with Quiktis' Cutting-Edge
-							Solutions
+							Solutions`}
 						</p>
 						<button className="max-sm:mt-3 px-[2em] py-3 rounded-md bg-[#F68B61] text-white gap-3">
 							Explore Events
@@ -74,7 +74,7 @@ export default function Home() {
             Where Event Experiences 
 Are Revolutionized!
 						</h2>
-            <p className="py-3 text-[#666666]">At Quiktis, we're on a mission to transform the way events are managed and experienced. With our cutting-edge ticketing platform, we're dedicated to simplifying the intricate world of event management, making it easier and more enjoyable for both organizers and attendees alike.</p>
+            <p className="py-3 text-[#666666]">{`At Quiktis, we're on a mission to transform the way events are managed and experienced. With our cutting-edge ticketing platform, we're dedicated to simplifying the intricate world of event management, making it easier and more enjoyable for both organizers and attendees alike.`}</p>
 						
 					</div>
         </section>
