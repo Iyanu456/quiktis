@@ -38,6 +38,7 @@ export default function Home() {
 					<div className="grid place-items-center md:flex gap-2 ">
 						<Image
 							src="/IMG_0832 3.png"
+							quality={100}
 							className="my-auto min-w-[100px]"
 							alt={"logo"}
 							height={24}
@@ -63,6 +64,7 @@ export default function Home() {
         <section className="px-[1.5em] md:px-[3em] mt-[3em] flex flex-col md:grid grid-cols-[1fr,1.55fr] gap-3 md:gap-[3em]">
         <Image
 							src="/image2.png"
+							quality={100}
 							className="my-auto w-[100%]"
 							alt={"logo"}
 							height={24}
@@ -85,6 +87,7 @@ Are Revolutionized!
             <div className="relative grid place-items-center">
             <Image
 							src="/Rectangle 246.png"
+							quality={100}
 							className="my-auto w-[100%] object-cover rounded-md max-sm:max-h-[10em]"
 							alt={"logo"}
 							height={24}
@@ -95,6 +98,7 @@ Are Revolutionized!
             <div className="relative grid place-items-center">
             <Image
 							src="/Rectangle 249.png"
+							quality={100}
 							className="my-auto w-[100%] object-cover rounded-md max-sm:max-h-[10em]"
 							alt={"logo"}
 							height={24}
@@ -105,6 +109,7 @@ Are Revolutionized!
             <div className="relative grid place-items-center">
             <Image
 							src="/Rectangle 248.png"
+							quality={100}
 							className="my-auto w-[100%] object-cover rounded-md max-sm:max-h-[10em]"
 							alt={"logo"}
 							height={24}
@@ -114,8 +119,9 @@ Are Revolutionized!
             </div>
             <div className="relative grid place-items-center">
             <Image
-							src="/Rectangle 247.png"
-							className="my-auto w-[100%] object-cover rounded-md max-sm:max-h-[10em]"
+		quality={100}					src="/Rectangle 247.png"
+							
+className="my-auto w-[100%] object-cover rounded-md max-sm:max-h-[10em]"
 							alt={"logo"}
 							height={24}
 							width={24}
