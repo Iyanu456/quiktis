@@ -44,7 +44,7 @@ export default function Home() {
 							width={24}
 						/>
 
-						<h1 className="max-sm:text-center text-white text-[2.8em] font-bold max-w-[65vw] md:leading-[1.4em]">
+						<h1 className="max-sm:text-center text-white text-[2.8em] font-bold md:max-w-[65vw] md:leading-[1.4em]">
 							From Concept to Curtain Call Quiktis Has You Covered
 						</h1>
 					</div>
