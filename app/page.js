@@ -78,6 +78,40 @@ Are Revolutionized!
 						
 					</div>
         </section>
+
+        <section className="px-[1.5em] md:px-[3em] py-[3.5em]">
+          <p className="font-bold text-[1.4em]">UP NEXT</p>
+          <div className="mt-3 flex flex-col md:grid grid-cols-[1fr,1fr,1fr,1fr] gap-5" >
+          <Image
+							src="/Rectangle 246.png"
+							className="my-auto w-[100%] object-cover rounded-md max-sm:max-h-[10em]"
+							alt={"logo"}
+							height={24}
+							width={24}
+						/>
+            <Image
+							src="/Rectangle 247.png"
+							className="my-auto w-[100%] object-cover rounded-md max-sm:max-h-[10em]"
+							alt={"logo"}
+							height={24}
+							width={24}
+						/>
+            <Image
+							src="/Rectangle 248.png"
+							className="my-auto w-[100%] object-cover rounded-md max-sm:max-h-[10em]"
+							alt={"logo"}
+							height={24}
+							width={24}
+						/>
+            <Image
+							src="/Rectangle 249.png"
+							className="my-auto w-[100%] object-cover rounded-md max-sm:max-h-[10em]"
+							alt={"logo"}
+							height={24}
+							width={24}
+						/>
+          </div>
+        </section>
 			</main>
 		</>
 	);
