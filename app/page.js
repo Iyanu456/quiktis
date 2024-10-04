@@ -3,12 +3,12 @@ import Link from "next/link";
 
 const categories = [
 	{category: "All"},
-	{category: "All"},
-	{category: "All"},
-	{category: "All"},
-	{category: "All"},
-	{category: "All"},
-	{category: "All"},
+	{category: "Trending for you"},
+	{category: "Today"},
+	{category: "Online"},
+	{category: "This Weekend"},
+	{category: "Music"},
+	{category: "Shows"},
 ]
 
 export default function Home() {
@@ -157,8 +157,9 @@ export default function Home() {
 		<section className="px-[1.5em] md:px-[3em] my-[3em]">
 			<h3 className="text-[2em] font-bold">Happening in <span>Nigeria</span></h3>
 			<ul className="flex gap-4">
-				<li>All</li>
-				<li>Trending for you</li>
+				{categories.map((item, index) => (
+					<li key={index}>{item.category}</li>
+				))}
 			</ul>
 		</section>
       </main>
