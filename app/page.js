@@ -160,7 +160,7 @@ export default function Home() {
         </section>
 
 		<section className="px-[1.5em] md:px-[3em] my-[3em]">
-			<h3 className="text-[2em] font-bold text-gray-800">Happening in <span className="text-[#F58560]
+			<h3 className="text-[2em] font-bold text-gray-800 flex gap-3">Happening in <Image src="/Vector.svg" alt="icon" height={24} width={24} /> <span className="text-[#F58560]
 ">Nigeria</span></h3>
 			<ul className="flex gap-[1.6em] mt-4 flex-wrap">
 				{categories.map((item, index) => (
