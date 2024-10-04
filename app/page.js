@@ -6,9 +6,13 @@ const categories = [
 	{category: "Trending for you"},
 	{category: "Today"},
 	{category: "Online"},
-	{category: "This Weekend"},
+	{category: "This weekend"},
 	{category: "Music"},
 	{category: "Shows"},
+	{category: "Festival"},
+	{category: "Foods and Drinks"},
+	{category: "Happening now"},
+	{category: "Games"},
 ]
 
 export default function Home() {
@@ -85,6 +89,7 @@ export default function Home() {
           />
 
           <div className="my-auto">
+			<p className="text-[#F58560] text-[1.24em] font-semibold">WELCOME TO QUIKTIS</p>
             <h2 className="font-bold text-[2em] md:max-w-[15em] md:leading-[1.4em]">
               Where Event Experiences Are Revolutionized!
             </h2>
@@ -155,10 +160,11 @@ export default function Home() {
         </section>
 
 		<section className="px-[1.5em] md:px-[3em] my-[3em]">
-			<h3 className="text-[2em] font-bold">Happening in <span>Nigeria</span></h3>
-			<ul className="flex gap-4">
+			<h3 className="text-[2em] font-bold text-gray-800">Happening in <span className="text-[#F58560]
+">Nigeria</span></h3>
+			<ul className="flex gap-[1.6em] mt-4 flex-wrap">
 				{categories.map((item, index) => (
-					<li key={index}>{item.category}</li>
+					<li key={index} className="font-semibold text-gray-700">{item.category}</li>
 				))}
 			</ul>
 		</section>
