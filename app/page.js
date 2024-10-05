@@ -266,7 +266,7 @@ export default function Home() {
           <Image
                 quality={100}
 				        className="my-auto"
-                src="Linkedin.svg"
+                src="linkedin.svg"
                 alt={"Linkedin"}
                 height={15}
                 width={15}
