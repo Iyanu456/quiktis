@@ -119,7 +119,7 @@ export default function Home() {
 
         <section className="px-[1.5em] md:px-[3em] py-[3.5em]">
           <p className="font-bold text-[1.4em]">UP NEXT</p>
-          <div className="mt-3 flex flex-col md:grid grid-cols-[1fr,1fr,1fr,1fr] gap-5">
+          <div className="mt-3 flex flex-col sm:grid-cols-[1fr,1fr] sm:grid md:grid-cols-[1fr,1fr,1fr,1fr] gap-5">
             <div className="relative grid place-items-center">
               <Image
                 src="/Rectangle 246.png"
@@ -188,9 +188,9 @@ export default function Home() {
 				))}
 			</ul>
 
-			<div className="grid md:grid-cols-[1fr,1fr,1fr] lg:grid-cols-[1fr,1fr,1fr,1fr] gap-[1.5em] mt-5">
+			<div className="grid sm:grid-cols-[1fr,1fr]  md:grid-cols-[1fr,1fr,1fr] lg:grid-cols-[1fr,1fr,1fr,1fr] gap-[1.5em] mt-5">
 				{category_cards.map((item, index) => (
-					<div className="bg-[#000000] text-white rounded-[1em]">
+					<div key={index} className="bg-[#000000] text-white rounded-[1em]">
 						<Image src={item.image_src} alt="category" className="w-[100%]" height={100} width={100} unoptimized={true} />
 					<div className="p-4 pt-[1.2em] md:text-[0.98]" dangerouslySetInnerHTML={{ __html: item.caption }}>
 				
