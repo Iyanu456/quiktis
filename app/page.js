@@ -17,7 +17,7 @@ const categories = [
 
 const category_cards = [
 	{
-		image_src: "/Image 16.png",
+		image_src: "/image 16.png",
 		caption: `Africa’s fashion industry is growing to meet global demand.<br> 
 		“but needs more investment, UNECO says.`
 	},
@@ -242,7 +242,7 @@ export default function Home() {
           <Image
                 quality={100}
 				        className="my-auto"
-                src="facebook.svg"
+                src="Facebook.svg"
                 alt={"Facebook"}
                 height={9}
                 width={9}
@@ -290,7 +290,7 @@ export default function Home() {
           <Image
                 quality={100}
 				        className="my-auto"
-                src="X.svg"
+                src="x.svg"
                 alt={"X/Twitter"}
                 height={15}
                 width={15}
