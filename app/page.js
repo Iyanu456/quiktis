@@ -204,10 +204,18 @@ export default function Home() {
 		<hr className="border-gray-600 border-[1.5px] border-dashed bg-white my-[5em]"></hr>
 
 		<section className="px-[1.5em] md:px-[3em] my-[3em]">
-			<div className="grid w-[max-content]">
+			<div className="max-sm:mx-auto grid max-sm:place-items-center w-[max-content]">
 			<h2 className="text-[2.5em] mb-[0.5em] mill-goudy lg:text-[3.2em] text-gray-700 max-sm:text-center">Get the latest updates 
 			<br></br>from  QUIKTIS</h2>
-			<Link href="" className="p-2 border border-black font-semibold rounded-lg">Enter Your Email Address</Link>
+			<Link href="" className="flex justify-between gap-3 p-2 px-3 border border-black font-semibold rounded-lg">Enter Your Email Address <Image
+                quality={100}
+				className="my-auto"
+                src="/Arrow 1.svg"
+                alt={"arrow icon"}
+                height={24}
+                width={24}
+                unoptimized={true}
+              /></Link>
 			</div>
 			
 		</section>
