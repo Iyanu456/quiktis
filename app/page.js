@@ -15,6 +15,22 @@ const categories = [
 	{category: "Games"},
 ]
 
+const category_cards = [
+	{
+		image_src: "/Image 16.png",
+		caption: `Africa’s fashion industry is growing to meet global demand. 
+		“but needs more investment, UNECO says.`
+	},
+	{
+		image_src: "/Rectangle 251.png",
+		caption: `Many Nigerians on Friday remembered the victims of the historic protests against police brutality which took place three years ago`
+	},
+	{
+		image_src: "/Rectangle 253.png",
+		caption: `Many Nigerians on Friday remembered the victims of the historic protests against police brutality which took place three years ago`
+	}
+]
+
 export default function Home() {
   return (
     <>
@@ -162,11 +178,23 @@ export default function Home() {
 		<section className="px-[1.5em] md:px-[3em] my-[3em]">
 			<h3 className="text-[2em] font-bold text-gray-800 flex gap-3">Happening in <Image src="/Vector.svg" alt="icon" height={24} width={24} /> <span className="text-[#F58560]
 ">Nigeria</span></h3>
-			<ul className="flex gap-[1.6em] mt-4 flex-wrap">
+			<ul className="flex gap-[1.6em] my-4 flex-wrap">
 				{categories.map((item, index) => (
-					<li key={index} className="font-semibold text-gray-700">{item.category}</li>
+					<li key={index} className="cursor-pointer font-semibold text-gray-700">{item.category}</li>
 				))}
 			</ul>
+
+			<div className="grid md:grid-cols-[1fr,1fr,1fr,1fr] gap-[1.5em] mt-5">
+				{category_cards.map((item, index) => (
+					<div>
+						<Image src={item.image_src} alt="category" className="w-[100%]" height={100} width={100} unoptimized={true} />
+					<div>
+					{item.caption}
+					</div>
+				</div>
+				))}
+				
+			</div>
 		</section>
       </main>
     </>
