@@ -18,7 +18,7 @@ const categories = [
 const category_cards = [
 	{
 		image_src: "/Image 16.png",
-		caption: `Africa’s fashion industry is growing to meet global demand. 
+		caption: `Africa’s fashion industry is growing to meet global demand.<br> 
 		“but needs more investment, UNECO says.`
 	},
 	{
@@ -27,7 +27,11 @@ const category_cards = [
 	},
 	{
 		image_src: "/Rectangle 253.png",
-		caption: `Many Nigerians on Friday remembered the victims of the historic protests against police brutality which took place three years ago`
+		caption: `New Netflix thriller tackling theme of justice in Nigeria is a global hit and a boon for Nollywood <br><br> A Nigerian action thriller that tells a gripping story of corruption and police brutality in Africa`
+	},
+	{
+		image_src: "/Rectangle 252.png",
+		caption: `New Netflix thriller tackling theme of justice in Nigeria is a global hit and a boon for Nollywood <br><br> A Nigerian action thriller that tells a gripping story of corruption and police brutality in Africa`
 	}
 ]
 
@@ -188,8 +192,8 @@ export default function Home() {
 				{category_cards.map((item, index) => (
 					<div>
 						<Image src={item.image_src} alt="category" className="w-[100%]" height={100} width={100} unoptimized={true} />
-					<div>
-					{item.caption}
+					<div dangerouslySetInnerHTML={{ __html: item.caption }}>
+				
 					</div>
 				</div>
 				))}
