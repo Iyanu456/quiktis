@@ -6,13 +6,17 @@
 
 
 body {
-  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-family: "Lato", Arial, Helvetica, sans-serif, "Sorts Mill Goudy";
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.mill-goudy {
+  font-family: "Sorts Mill Goudy";
 }
 
 .background {

@@ -204,7 +204,7 @@ export default function Home() {
 		<hr className="border-gray-600 border-[1.5px] border-dashed bg-white my-[5em]"></hr>
 
 		<section className="px-[1.5em] md:px-[3em] my-[3em]">
-			<h2 className="text-[2.3em]  lg:text-[2.5em] text-gray-700">Get the latest updates 
+			<h2 className="text-[2.3em] mill-goudy lg:text-[2.5em] text-gray-700">Get the latest updates 
 			<br></br>from  QUIKTIS</h2>
 		</section>
       </main>
