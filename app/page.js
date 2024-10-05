@@ -36,38 +36,11 @@ const category_cards = [
 ]
 
 export default function Home() {
+  
+
+  
   return (
     <>
-      <header className="flex justify-between py-4 px-[1.5em] md:px-[3em] bg-[#F68B61]">
-        <Image
-          src="/logo.svg"
-          className="my-auto min-w-[100px]"
-          alt={"logo"}
-          height={24}
-          width={24}
-        />
-        <nav className="hidden md:flex items-center gap-[2em] my-auto">
-          <Link className="font-bold text-white" href="/">
-            Home
-          </Link>
-          <Link className="font-bold text-white" href="/">
-            Pages
-          </Link>
-          <Link className="font-bold text-white" href="/">
-            Event
-          </Link>
-          <Link className="font-bold text-white" href="/">
-            Help
-          </Link>
-          <Link
-            className=" border border-2 px-3 py-1 rounded-md ml-3 font-bold text-white"
-            href="/"
-          >
-            Get Tickets
-          </Link>
-        </nav>
-      </header>
-
       <main className="">
         <section className="background px-[1.5em] md:px-[3em] py-[3em] ">
           <div className="grid place-items-center md:flex gap-2 ">
@@ -91,7 +64,7 @@ export default function Home() {
 							Stay Ahead of the Curve with Quiktis' Cutting-Edge
 							Solutions`}
             </p>
-            <button className="max-sm:mt-3 px-[2em] py-3 rounded-md bg-[#F68B61] text-white gap-3">
+            <button className="hover:scale-[1.06] hover:shadow-md transition ease-in max-sm:mt-3 px-[2em] py-3 rounded-md bg-[#F68B61] text-white gap-3">
               Explore Events
             </button>
           </div>
@@ -120,59 +93,59 @@ export default function Home() {
         <section className="px-[1.5em] md:px-[3em] py-[3.5em]">
           <p className="font-bold text-[1.4em]">UP NEXT</p>
           <div className="mt-3 flex flex-col sm:grid-cols-[1fr,1fr] sm:grid md:grid-cols-[1fr,1fr,1fr,1fr] gap-5">
-            <div className="relative grid place-items-center">
+            <div className="relative  grid place-items-center overflow-hidden rounded-[0.9em]">
               <Image
                 src="/Rectangle 246.png"
                 quality={100}
-                className="my-auto w-[100%] object-cover rounded-md max-sm:max-h-[10em]"
+                className="my-auto cursor-pointer hover:scale-[1.1] transition ease-in  w-[100%] object-cover  max-sm:max-h-[10em]"
                 alt={"logo"}
                 height={24}
                 width={24}
                 unoptimized={true}
               />
-              <p className="absolute text-white font-bold text-[1.1em] md:mb-[-6.2em]">
+              <p className="cursor-pointer absolute h-[fit-content] w-[fit-content] text-white font-bold text-[1.1em] md:mb-[-6.2em]">
                 Catchy Date
               </p>
             </div>
-            <div className="relative grid place-items-center">
+            <div className="relative grid place-items-center overflow-hidden rounded-[0.9em]">
               <Image
                 src="/Rectangle 249.png"
                 quality={100}
-                className="my-auto w-[100%] object-cover rounded-md max-sm:max-h-[10em]"
+                className="cursor-pointer my-auto w-[100%] object-cover rounded-md max-sm:max-h-[10em] hover:scale-[1.1] transition ease-in"
                 alt={"logo"}
                 height={24}
                 width={24}
                 unoptimized={true}
               />
-              <p className="absolute text-white font-bold text-[1.1em] md:mb-[-6.2em]">
+              <p className="cursor-pointer absolute text-white  font-bold text-[1.1em] md:mb-[-6.2em]">
                 The Club Guru
               </p>
             </div>
-            <div className="relative grid place-items-center">
+            <div className="relative grid place-items-center overflow-hidden rounded-[0.9em]">
               <Image
                 src="/Rectangle 248.png"
                 quality={100}
-                className="my-auto w-[100%] object-cover rounded-md max-sm:max-h-[10em]"
+                className="cursor-pointer my-auto w-[100%] hover:scale-[1.1] object-cover rounded-md max-sm:max-h-[10em] transition ease-in"
                 alt={"logo"}
                 height={24}
                 width={24}
                 unoptimized={true}
               />
-              <p className="absolute text-white font-bold text-[1.1em] md:mb-[-6.2em]">
+              <p className="cursor-pointer absolute text-white font-bold text-[1.1em] md:mb-[-6.2em]">
                 Laides Night
               </p>
             </div>
-            <div className="relative grid place-items-center">
+            <div className="relative grid place-items-center overflow-hidden rounded-[0.9em]">
               <Image
                 quality={100}
                 src="/Rectangle 247.png"
-                className="my-auto w-[100%] object-cover rounded-md max-sm:max-h-[10em]"
+                className="cursor-pointer my-auto w-[100%] object-cover rounded-md max-sm:max-h-[10em] hover:scale-[1.1] transition ease-in"
                 alt={"logo"}
                 height={24}
                 width={24}
                 unoptimized={true}
               />
-              <p className="absolute text-white font-bold text-[1.1em] md:mb-[-6.2em]">
+              <p className="cursor-pointer absolute text-white font-bold text-[1.1em] md:mb-[-6.2em]">
                 Talent Show
               </p>
             </div>
@@ -184,14 +157,14 @@ export default function Home() {
 ">Nigeria</span></h3>
 			<ul className="flex gap-[1.6em] my-4 flex-wrap">
 				{categories.map((item, index) => (
-					<li key={index} className={`cursor-pointer font-semibold text-gray-700 ${index === 1 ? "text-[#F58560]" : ""} `}>{item.category}</li>
+					<li key={index} className={`hover:text-[#F58560] transition duration-300 ease-in-out cursor-pointer font-semibold text-gray-700 ${index === 1 ? "text-[#F58560]" : ""} `}>{item.category}</li>
 				))}
 			</ul>
 
 			<div className="grid sm:grid-cols-[1fr,1fr]  md:grid-cols-[1fr,1fr,1fr] lg:grid-cols-[1fr,1fr,1fr,1fr] gap-[1.5em] mt-[1.5em]">
 				{category_cards.map((item, index) => (
-					<div key={index} className="bg-[#000000] text-white rounded-[1em]">
-						<Image src={item.image_src} alt="category" className="w-[100%]" height={100} width={100} unoptimized={true} />
+					<div key={index} className="overflow-hidden bg-[#000000] text-white rounded-[1em]">
+						<Image src={item.image_src} alt="category" className="w-[100%] hover:scale-[1.06] transition ease-in" height={100} width={100} unoptimized={true} />
 					<div className="p-4 pt-[1.2em] md:text-[0.98]" dangerouslySetInnerHTML={{ __html: item.caption }}>
 				
 					</div>
@@ -207,7 +180,7 @@ export default function Home() {
 			<div className="max-sm:mx-auto grid max-sm:place-items-center w-[max-content]">
 			<h2 className="text-[1.8em] md:text-[2.5em] mb-[0.5em] mill-goudy lg:text-[3.2em] text-gray-700 max-sm:text-center">Get the latest updates 
 			<br></br>from  QUIKTIS</h2>
-			<Link href="" className="max-sm:mt-3 flex justify-between gap-3 p-2 px-3 border border-black font-semibold rounded-lg">Enter Your Email Address <Image
+			<Link href="" className="hover:scale-[1.05] hover:shadow-md transition ease-in max-sm:mt-3 flex justify-between gap-3 p-2 px-3 border border-black font-semibold rounded-lg">Enter Your Email Address <Image
                 quality={100}
 				className="my-auto"
                 src="/Arrow 1.svg"
@@ -221,105 +194,7 @@ export default function Home() {
 		</section>
       </main>
 
-      <footer className="grid px-[1.5em] gap-[2.5em] sm:grid-cols-[1fr,1fr] md:px-[3em] py-[2.5em] pb-[4em] text-white md:flex md:gap-[4em] flex-wrap justify-between mt-[3em] bg-black">
-
-        <div>
-        <Image
-                quality={100}
-				className="my-auto"
-                src="/footer logo.svg"
-                alt={"arrow icon"}
-                height={150}
-                width={150}
-                unoptimized={true}
-              />
-        </div>
-
-        <div>
-          <h3 className="text-[1.5em] font-bold poppins">Get in touch</h3>
-          <div className="flex gap-5 mt-3">
-          <Link href="">
-          <Image
-                quality={100}
-				        className="my-auto"
-                src="Facebook.svg"
-                alt={"Facebook"}
-                height={9}
-                width={9}
-                unoptimized={true}
-              />
-              </Link>
-
-            <Link href="">
-          <Image
-                quality={100}
-				        className="my-auto"
-                src="instagram.svg"
-                alt={"Instagram"}
-                height={15}
-                width={15}
-                unoptimized={true}
-              />
-              </Link>
-
-              <Link href="">
-          <Image
-                quality={100}
-				        className="my-auto"
-                src="linkedin.svg"
-                alt={"Linkedin"}
-                height={15}
-                width={15}
-                unoptimized={true}
-              />
-              </Link>
-
-              <Link href="">
-          <Image
-                quality={100}
-				        className="mt-1"
-                src="youtube.svg"
-                alt={"Youtube"}
-                height={15}
-                width={15}
-                unoptimized={true}
-              />
-              </Link>
-
-              <Link href="">
-          <Image
-                quality={100}
-				        className="my-auto"
-                src="x.svg"
-                alt={"X/Twitter"}
-                height={15}
-                width={15}
-                unoptimized={true}
-              />
-              </Link>
-
-             
-          </div>
-        </div>
-        
-        <div className="flex flex-col gap-3">
-          <Link href="" >Home</Link>
-          <Link href="" >News</Link>
-          <Link href="" >Genres</Link>
-        </div>
-
-        <div className="flex flex-col gap-3">
-          <Link href="" >Event</Link>
-          <Link href="" >Ticket</Link>
-          <Link href="" >FAQ</Link>
-        </div>
-
-        <div>
-          <Link href="" className="px-5 py-2 rounded-lg border border-[#F58560] border-2">Contact</Link>
-        </div>
-        
-        
-      </footer>
+      
     </>
   );
 }

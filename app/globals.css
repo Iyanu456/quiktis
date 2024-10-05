@@ -28,3 +28,8 @@ body {
   object-fit: cover;
   object-position: center;
 }
+
+footer > div > a:hover {
+  color: #F58560;
+  transition: ease-in;
+}
