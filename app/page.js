@@ -184,7 +184,7 @@ export default function Home() {
 ">Nigeria</span></h3>
 			<ul className="flex gap-[1.6em] my-4 flex-wrap">
 				{categories.map((item, index) => (
-					<li key={index} className="cursor-pointer font-semibold text-gray-700">{item.category}</li>
+					<li key={index} className={`cursor-pointer font-semibold text-gray-700 ${index === 1 ? "text-[#F58560]" : ""} `}>{item.category}</li>
 				))}
 			</ul>
 
@@ -221,7 +221,7 @@ export default function Home() {
 		</section>
       </main>
 
-      <footer className="grid px-[1.5em] gap-[2.5em] sm:grid-cols-[1fr,1fr] md:px-[3em] py-[2.5em] text-white md:flex md:gap-[4em] flex-wrap justify-between mt-[3em] bg-black">
+      <footer className="grid px-[1.5em] gap-[2.5em] sm:grid-cols-[1fr,1fr] md:px-[3em] py-[2.5em] pb-[4em] text-white md:flex md:gap-[4em] flex-wrap justify-between mt-[3em] bg-black">
 
         <div>
         <Image
@@ -237,11 +237,23 @@ export default function Home() {
 
         <div>
           <h3 className="text-[1.5em] font-bold poppins">Get in touch</h3>
-          <div className="flex gap-5">
+          <div className="flex gap-5 mt-3">
+          <Link href="">
+          <Image
+                quality={100}
+				        className="my-auto"
+                src="facebook.svg"
+                alt={"Facebook"}
+                height={9}
+                width={9}
+                unoptimized={true}
+              />
+              </Link>
+
             <Link href="">
           <Image
                 quality={100}
-				        className=""
+				        className="my-auto"
                 src="instagram.svg"
                 alt={"Instagram"}
                 height={15}
@@ -249,10 +261,11 @@ export default function Home() {
                 unoptimized={true}
               />
               </Link>
+
               <Link href="">
           <Image
                 quality={100}
-				        className=""
+				        className="my-auto"
                 src="Linkedin.svg"
                 alt={"Linkedin"}
                 height={15}
@@ -264,14 +277,28 @@ export default function Home() {
               <Link href="">
           <Image
                 quality={100}
-				        className=""
-                src="Facebook.svg"
-                alt={"Facebook"}
-                height={8}
-                width={8}
+				        className="mt-1"
+                src="youtube.svg"
+                alt={"Youtube"}
+                height={15}
+                width={15}
                 unoptimized={true}
               />
               </Link>
+
+              <Link href="">
+          <Image
+                quality={100}
+				        className="my-auto"
+                src="X.svg"
+                alt={"X/Twitter"}
+                height={15}
+                width={15}
+                unoptimized={true}
+              />
+              </Link>
+
+             
           </div>
         </div>
         
