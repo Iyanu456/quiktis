@@ -188,7 +188,7 @@ export default function Home() {
 				))}
 			</ul>
 
-			<div className="grid sm:grid-cols-[1fr,1fr]  md:grid-cols-[1fr,1fr,1fr] lg:grid-cols-[1fr,1fr,1fr,1fr] gap-[1.5em] mt-5">
+			<div className="grid sm:grid-cols-[1fr,1fr]  md:grid-cols-[1fr,1fr,1fr] lg:grid-cols-[1fr,1fr,1fr,1fr] gap-[1.5em] mt-[1.5em]">
 				{category_cards.map((item, index) => (
 					<div key={index} className="bg-[#000000] text-white rounded-[1em]">
 						<Image src={item.image_src} alt="category" className="w-[100%]" height={100} width={100} unoptimized={true} />
@@ -199,6 +199,13 @@ export default function Home() {
 				))}
 				
 			</div>
+		</section>
+
+		<hr className="border-gray-600 border-[1.5px] border-dashed bg-white my-[5em]"></hr>
+
+		<section className="px-[1.5em] md:px-[3em] my-[3em]">
+			<h2 className="text-[2.3em]  lg:text-[2.5em] text-gray-700">Get the latest updates 
+			<br></br>from  QUIKTIS</h2>
 		</section>
       </main>
     </>
