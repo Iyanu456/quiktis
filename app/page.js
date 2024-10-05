@@ -180,7 +180,7 @@ export default function Home() {
         </section>
 
 		<section className="px-[1.5em] md:px-[3em] my-[3em]">
-			<h3 className="text-[2em] font-bold text-gray-800 flex gap-3">Happening in <Image src="/Vector.svg" alt="icon" height={24} width={24} /> <span className="text-[#F58560]
+			<h3 className="text-[2em] font-bold text-gray-800 flex gap-3 flex-wrap">Happening in <Image src="/Vector.svg" alt="icon" height={24} width={24} /> <span className="text-[#F58560]
 ">Nigeria</span></h3>
 			<ul className="flex gap-[1.6em] my-4 flex-wrap">
 				{categories.map((item, index) => (
@@ -205,7 +205,7 @@ export default function Home() {
 
 		<section className="px-[1.5em] md:px-[3em] my-[3em]">
 			<div className="max-sm:mx-auto grid max-sm:place-items-center w-[max-content]">
-			<h2 className="text-[2.5em] mb-[0.5em] mill-goudy lg:text-[3.2em] text-gray-700 max-sm:text-center">Get the latest updates 
+			<h2 className="text-[1.8em] md:text-[2.5em] mb-[0.5em] mill-goudy lg:text-[3.2em] text-gray-700 max-sm:text-center">Get the latest updates 
 			<br></br>from  QUIKTIS</h2>
 			<Link href="" className="flex justify-between gap-3 p-2 px-3 border border-black font-semibold rounded-lg">Enter Your Email Address <Image
                 quality={100}
