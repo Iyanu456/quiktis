@@ -31,7 +31,7 @@ const category_cards = [
 	},
 	{
 		image_src: "/Rectangle 252.png",
-		caption: `New Netflix thriller tackling theme of justice in Nigeria is a global hit and a boon for Nollywood <br><br> A Nigerian action thriller that tells a gripping story of corruption and police brutality in Africa`
+		caption: `Nigerian President Muhammadu Buhari has opened Africa’s biggest oil refinery, with hopes it will help the country achieve self-sufficiency and become a net exporter of refined petroleum products`
 	}
 ]
 
@@ -188,11 +188,11 @@ export default function Home() {
 				))}
 			</ul>
 
-			<div className="grid md:grid-cols-[1fr,1fr,1fr,1fr] gap-[1.5em] mt-5">
+			<div className="grid md:grid-cols-[1fr,1fr,1fr] lg:grid-cols-[1fr,1fr,1fr,1fr] gap-[1.5em] mt-5">
 				{category_cards.map((item, index) => (
-					<div>
+					<div className="bg-[#000000] text-white rounded-[1em]">
 						<Image src={item.image_src} alt="category" className="w-[100%]" height={100} width={100} unoptimized={true} />
-					<div dangerouslySetInnerHTML={{ __html: item.caption }}>
+					<div className="p-4 pt-[1.2em] md:text-[0.98]" dangerouslySetInnerHTML={{ __html: item.caption }}>
 				
 					</div>
 				</div>
